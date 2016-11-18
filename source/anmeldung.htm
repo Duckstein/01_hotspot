@@ -1,0 +1,75 @@
+<html>
+<head>
+<pbelem cryptscript>
+<title>LANCOM Systems Public Spot Page Template - Login Page</title>
+<style type="text/css">
+
+body /* Hier werden die generellen Vorgaben (Farbe, Schriftart, Textpositionierung) der Seite festgelegt*/
+{
+	background-color:#e0e2e4;	/* Hintergrundfarbe der Seite*/
+	font-family:Arial;			/* Schriftart */
+	color:#000000;				/* Schriftfarbe von Überschrift & Fußzeile  */
+}
+
+#content /* Vorgaben für den Textblock */
+{
+	background-color:#FFFFFF;	/* Hintergrundfarbe des Textblocks */
+	color:#000000;				/* Schriftfarbe des Textblocks */
+	text-align:left;			/* Ausrichtung der Schrift (linksbündig) */
+	margin-left:20%;			/* Außenabstand des Textblocks - links */
+	margin-right:20%;			/* Außenabstand des Textblocks - links */
+	padding:10px;				/* Innenabstand des Textes */
+}
+
+/* Layout der Seite */
+#header	/* Vorgaben für Überschriften */
+{		
+	text-align:center;		 /* Texausrichtung der Überschrift */		
+}
+
+#footer	/* Positionierung der Fußzeile */
+{	
+	text-align:center;	
+	position:fixed;
+	padding:1%;
+	bottom:0px;
+	left:0px;
+	right:0px;	
+}
+
+/* Workaround für IExplorer */
+
+* html #wrapper 
+{
+	position:relative;
+	min-height:100%;
+	height:auto;
+	height:100%;
+}
+
+* html #footer	
+{	
+	text-align:center;	
+	position:absolute;
+	padding:1%;
+	width:100%;
+	bottom:0;
+	left:0px;
+	right:0px;	
+}
+</style>
+</head>
+<body>
+	<div id="header">									  <!-- Hier können die Überschriften eingegeben werden -->
+		<h1>LANCOM Systems Public Spot Page Template</h1> <!-- Überschrift 1 -->
+		<pbelem voucherimg>								  <!-- Dieses Element fügt das Kopfbild in die Seite ein -->
+		<h2>Login Page</h2>								  <!-- Überschrift 2 -->
+	</div>
+	<div id="content">									  <!-- Textinhalt der Seite -->
+		<p><pbelem loginform>							  <!-- Dieses Element fügt das Login-Formular in die Seite ein -->
+	</div>
+	<div id="footer">									  <!-- Fußzeile -->
+	LANCOM Systems GmbH									  <!-- Dieser Text erscheint in der Fußzeile -->
+	</div>
+</body>
+</html>
