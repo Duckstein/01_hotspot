@@ -138,7 +138,7 @@ h3 {
 	font-size: 12px;
 }
 
-.text-small h3 {
+.scrollable h3 {
 	margin-top: 0px;
 }
 
@@ -205,6 +205,18 @@ h3 {
 
 
 
+/* scrolling div
+---------------- */
+
+.scrollable {
+	width: 100%;
+	height: 160px;
+	overflow: auto;
+}
+
+
+
+
 /* article
 ---------- */
 
@@ -214,6 +226,7 @@ h3 {
 
 .form-box {
 	margin-top: 35px;
+	margin-bottom: 30px;
 }
 
 .shadow {
@@ -261,15 +274,22 @@ h3 {
 }
 
 .form-footer {
-	padding: 5px 25px 10px 25px;
+	padding: 15px 25px 15px 25px;
 	background: #fff;
 	-moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; border-radius: 0 0 4px 4px;
-	text-align: left;
 }
 
 .btn-link {
 	color: #888;
 	font-size: 12px;
+}
+
+p.btn-success a:link, p.btn-success a:visited {
+	color: #ffffff;
+}
+
+p.btn-success a:hover {
+	color: #ffffff;
 }
 
 
@@ -334,76 +354,46 @@ textarea.form-control::-webkit-input-placeholder {
 	Media queries
 \* --------------------------------- */
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2) {
-	/* for retina displays
-	.wrapper {
-		background: url(../img/backgrounds/01@2x.jpg) no-repeat center center scroll;
+/* lg */ 
+@media (min-width: 1200px) {
+	.scrollable {
+		height: 240px;
 	}
-	*/
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {}
+/* md */
+@media (min-width: 992px) and (max-width: 1199px) {
+	.scrollable {
+		height: 240px;
+	}
+}
 
+/* sm */
 @media (min-width: 768px) and (max-width: 991px) {
-	.keyvisualsteadyhalf h1 {
-		font-size: 77px;
+	.scrollable {
+		height: 240px;
 	}
 }
 
+/* xs */
 @media (max-width: 767px) {
-	.keyvisualsteadyhalf {
-		height: 351px;
+	body {
+		font-size: 12px;
 	}
 	
-	.keyvisualsteadyhalf h1 {
-		font-size: 77px;
-	}
-	
-}
-
-@media (max-width: 415px) {
-	
-	.keyvisualsteadyhalf {
-		height: 150px !important;
-	}
-	
-	.keyvisualsteadyhalf h1 {
-		font-size: 33px;
-	}
-	
-	h1, h2 {
-		font-size: 29px;
-		line-height: 30px;
-		margin-top: 10px;
+	h1 {
+		font-size: 24px;
+		line-height: 110%;
 	}
 	
 	h3 {
-		font-size: 22px;
-		line-height: 22px;
+		font-size: 18px;
+		line-height: 110%;
 	}
 	
-	p {
-		font-size: 14px;
-	}
-	
-	.text-small {
-		font-size: 11px;
-	}
+}
 
-	.text-small h3 {
-		font-size: 14px;
-	}
+/* XS Portrait */
+@media (max-width: 479px) {
 	
-	.form-box {
-    	margin-top: 5px;
-	}
-	
-	.form-top {
-		padding: 0 25px 5px;
-	}
-	
-	.form-top-right {
-		font-size: 44px;
-		line-height: 88px;
-	}
 }
