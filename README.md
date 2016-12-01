@@ -1,2 +1,4 @@
 # Resort Hot Spot
-WiFi Routines in a bunch :earth_americas:
+UI for LANCOM PUBLIC SPOT
+
+https://www.lancom-systems.de/loesungen/wireless-lan/hotspot-loesungen/
