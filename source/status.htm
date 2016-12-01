@@ -44,7 +44,7 @@
                     <div class="form-top">
                         <div class="form-top-left">
                             <h3>Hotspot Internet Zugang</h3>
-                            <p class="text-success"><i class="fa fa-check"></i> Sie sind nun online.</p>
+                            <p>Public Spot Status</p>
                         </div>
                         <div class="form-top-right">
                         
@@ -54,41 +54,48 @@
                             
                         </div>
                     </div>
-                    <div>
-                        <!-- /// HOTEL ADVERTISEMENT \\\ -->
-                        <img src="http://www.morada.de/hotspot/assets/img/advert/01.jpg" class="img-responsive">
-                        <!-- \\\ HOTEL ADVERTISEMENT /// -->
-                    </div>
                     <div class="form-bottom">
-                    	<pbcond servermsg>
-							<b class="text-danger"><pbelem servermsg></b>
-						</pbcond>
-                        <pbcond origlink>
-						<p>Klicken Sie <a href="http://www.morada.de/hotspot/" target="_blank">hier</a> wenn Sie nicht innerhalb von 10 Sekunden weitergeleitet werden.</p>
-						</pbcond>
+                    	<table class="table table-striped table-hover">
+                            <tbody>
+                                <tr>
+                                    <td>Momentaner Zustand:</td>
+                                    <td><pbelem sessionstatus></td>
+                                </tr>
+                                <tr>
+                                    <td>Benutzerkennung:</td>
+                                    <td><pbelem userid></td>
+                                </tr>
+                                <tr>
+                                    <td>Benutzungszeit:</td>
+                                    <td><pbelem sessiontime></td>
+                                </tr>
+                                <tr>
+                                    <td>Gesendete Bytes:</td>
+                                    <td><pbelem rxbytes></td>
+                                </tr>
+                                <tr>
+                                    <td>Empfangene Bytes:</td>
+                                    <td><pbelem txbytes></td>
+                                </tr>
+                                <tr>
+                                    <td>Zugang l&auml;uft ab:</td>
+                                    <td><pbcond sesstimeout><pbelem sesstimeout></pbcond></td>
+                                </tr>
+                                <tr>
+                                    <td>Verbleibendes Transfervolumen (bytes):</td>
+                                    <td><pbcond vollimit><pbelem vollimit></pbcond></td>
+                                </tr>
+                            </tbody>
+						</table>
                     </div>
                     <div class="form-footer">
-                       <p>Klicken Sie <pblink statuslink>hier</pblink> um sich auszuloggen</p>
+						<p>Klicken Sie <pblink logofflink>hier</pblink> um sich auszuloggen.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
-<pbcond origlink>
-	<script language="javascript">
-        
-        function redir(){
-            
-            document.location = "http://www.morada.de/hotspot/";
-            
-        }
-        
-        setTimeout("redir()",10000);
-    
-    </script>
-</pbcond>
 
 </body>
 </html>
