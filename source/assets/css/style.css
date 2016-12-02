@@ -391,9 +391,14 @@ textarea.form-control::-webkit-input-placeholder {
 		line-height: 110%;
 	}
 	
+	.form-login {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
 }
 
 /* XS Portrait */
 @media (max-width: 479px) {
-	
+	.form-login .col-sm-8 {
+		padding-left: 100px;
 }
